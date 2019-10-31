@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<category>
+		<pattern> Where * Bristol </pattern>
+		<template>In the South-West of England</template>
+	</category>
+	<category>
+		<pattern> Where * UWE </pattern>
+		<template>In north Bristol</template>
+	</category>
+	<category>
+		<pattern>Is Cardiff in Bristol</pattern>
+		<template>I do not have an answer for that</template>
+	</category>
+	<category>
+		<pattern>where * London </pattern>
+		<template>Somewhere east of Bristol</template>
+	</category>
+	<category>
+		<pattern>where * Cardiff </pattern>
+		<template>In Wales</template>
+	</category>
+	<category>
+		<pattern>where * beauty </pattern>
+		<template>In the eye of the beholder</template>
+	</category>
+	<category>
+		<pattern>^ Bristol</pattern>
+		<template>The population of Bristol is over 450000</template>
+	</category>
+	<category>
+		<pattern>^ london</pattern>
+		<template>The population of London is about 8.7 million</template>
+	</category>
+	<category>
+		<pattern>^ cardiff</pattern>
+		<template>The population of Cardiff is over 360000</template>
+	</category>
+	<category>
+		<pattern>^ beauty</pattern>
+		<template>A subjective judgment evoked by an emotional response</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<template>I do not have an answer for that</template>
+	</category>
+	<category>
+		<pattern>What is *</pattern>
+		<template>
+			<set name="name">
+				<star/>
+			</set> is a city
+		</template>
+	</category>
+	<category>
+		<pattern>Where is it</pattern>
+		<that>Bristol is a city</that>
+		<template>In the South-West of England</template>
+	</category>
+	<category>
+		<pattern>Where is it</pattern>
+		<that>London is a city</that>
+		<template>Somewhere east of Bristol</template>
+	</category>
+	<category>
+		<pattern>How many people live in *</pattern>
+		<template>I do not know what the population of  Â 
+			
+			<set name="name">
+				<star/>
+			</set>
+		</template>
+	</category>
+	<category>
+		<pattern>Why not</pattern>
+		<that>I DO NOT KNOW WHAT THE POPULATION OF *</that>
+		<template>Because it is too hard to count the residents of 
+			
+			<get name="name"/>
+			<star/>
+		</template>
+	</category>
+	<category>
+		<pattern>Where is Keynsham</pattern>
+		<template>I do not know where Keynsham is</template>
+	</category>
+	<category>
+		<pattern>WHY NOT</pattern>
+		<that>I DO NOT KNOW WHERE KEYNSHAM IS</that>
+		<template>Because I do not have a category to connect me to a mapping service</template>
+	</category>
+</aiml>
